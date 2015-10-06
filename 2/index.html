@@ -1,24 +1,130 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
-	<title>Formation javascript | Calculatrice</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.1/css/bootstrap.css">
+	<title>Formation javascript | Variables</title>
 	<meta charset="utf-8"></meta>
 </head>
 <body class="container">
-	<h1 class="text-center">TP : créer une calculatrice</h1>
-	<p>Objectif du tp créer une calculatrice capable d'effectuer les opérations suivantes</p>
-	<ul class="list-group">
-		<li class="list-group-item">
-			<h6>Opération mathématiques</h6>
-			<ul>
-				<li>Addition => "addition"</li>
-				<li>Soustraction => "soustraction"</li>
-				<li>Multiplication => "multiplication"</li>
-				<li>Division => "soustraction"</li>
-			</ul>
-		</li>
-	</ul>
+	<h1 class="text-center">Les variables</h1>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="panel panel-default panel-info">
+				<div class="panel-heading">
+					<h3>Consignes</h3>
+				</div>
+
+				<div class="panel-body">
+					<p>
+						Ouvrez la console (F12 sur windows / cmd+maj+i sur mac)
+					</p>
+					<p>
+						Copiez et collez directement le code dans la console du navigateur
+					</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="panel panel-default panel-info">
+				<div class="panel-heading">
+					<h3>Variable texte</h3>
+				</div>
+
+				<div class="panel-body">
+					<div>
+						var foo = "Hello world";
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="col-sm-6">
+			<div class="panel panel-default panel-info">
+				<div class="panel-heading">
+					<h3>Variable numérique</h3>
+				</div>
+
+				<div class="panel-body">
+					<div>
+						var foo = 1;
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="panel panel-default panel-info">
+				<div class="panel-heading">
+					<h3>Variable objet</h3>
+				</div>
+
+				<div class="panel-body">
+					<pre>
+var foo = {
+	one: "Hello ",
+	two: "world !"
+};
+					</pre>
+				</div>
+			</div>	
+		</div>
+
+		<div class="col-sm-6">
+			<div class="panel panel-default panel-info">
+				<div class="panel-heading">
+					<h3>Variable fonction</h3>
+				</div>
+
+				<div class="panel-body">
+					<pre>
+var foo = function(){
+	alert('Bravo');
+};
+					</pre>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="panel panel-default panel-info">
+				<div class="panel-heading">
+					<h3>Variable fonction (avec parametre)</h3>
+				</div>
+
+				<div class="panel-body">
+					<pre>
+var foo = function(parametre){
+	alert(parametre);
+};
+foo('Je fonctionne');
+					</pre>
+				</div>
+			</div>	
+		</div>
+
+		<div class="col-sm-6">
+			<div class="panel panel-default panel-info">
+				<div class="panel-heading">
+					<h3>Variable fonction (avec parametre x 2)</h3>
+				</div>
+
+				<div class="panel-body">
+					<pre>
+var bar ="Arthur";
+var foo = function(parametre1, parametre2){
+	alert('Bravo ' + parametre1 + " " + parametre2);
+};
+foo('Mr', bar);
+					</pre>
+				</div>
+			</div>	
+		</div>
+	</div>
 <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
