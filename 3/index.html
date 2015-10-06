@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.1/css/bootstrap.css">
+	<title>Formation javascript | Calculatrice</title>
+	<meta charset="utf-8"></meta>
+</head>
+<body class="container">
+	<h1 class="text-center">TP : créer une calculatrice</h1>
+	<p>Objectif du tp créer une calculatrice capable d'effectuer les opérations suivantes</p>
+	<ul class="list-group">
+		<li class="list-group-item">
+			<h6>Opération mathématiques</h6>
+			<ul>
+				<li>Addition => "addition"</li>
+				<li>Soustraction => "soustraction"</li>
+				<li>Multiplication => "multiplication"</li>
+				<li>Division => "soustraction"(Une coquille s'est glissée içi, c'est bien division, le nom de la fonction)</li>
+			</ul>
+		</li>
+	</ul>
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="panel panel-default panel-info">
+				<div class="panel-heading">
+					<h3>Addition</h3>
+				</div>
+
+				<div class="panel-body">
+					<pre>
+var addition = function(parametre1, parametre2){
+	alert(parametre1 + parametre2);
+};
+addition(1, 2);
+					</pre>
+				</div>
+			</div>	
+		</div>
+
+		<div class="col-sm-6">
+			<div class="panel panel-default panel-info">
+				<div class="panel-heading">
+					<h3>Soustraction</h3>
+				</div>
+
+				<div class="panel-body">
+					<pre>
+var soustraction = function(parametre1, parametre2){
+	alert(parametre1 - parametre2);
+};
+soustraction(1, 2);
+					</pre>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="panel panel-default panel-info">
+				<div class="panel-heading">
+					<h3>Multiplication</h3>
+				</div>
+
+				<div class="panel-body">
+					<pre>
+var multiplication = function(parametre1, parametre2){
+	alert(parametre1 * parametre2);
+};
+multiplication(1, 2);
+					</pre>
+				</div>
+			</div>	
+		</div>
+
+		<div class="col-sm-6">
+			<div class="panel panel-default panel-info">
+				<div class="panel-heading">
+					<h3>Division</h3>
+				</div>
+
+				<div class="panel-body">
+					<pre>
+var division = function(parametre1, parametre2){
+	alert(parametre1 / parametre2);
+};
+division(4, 2);
+					</pre>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="panel panel-default panel-info">
+				<div class="panel-heading">
+					<h3>Bonus</h3>
+				</div>
+
+				<div class="panel-body">
+				<p>Alors les pti filous, il se passe quoi quand je divise par 0 ??</p>
+					<pre>
+
+division(10, 0);
+					</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
