@@ -3,7 +3,9 @@ var direBonjour = function(parametre){
 }
 
 var bonjourDamien = function(callback, parametre){
+
 	var retourDeLaFonction = callback(parametre);
+
 	console.log(retourDeLaFonction);
 	return 'Bravo, Bienvenue dans le monde merveilleux des fonctions qui s\'appellent !'
 }
@@ -22,11 +24,7 @@ function fonctionClassique(){
 	console.log('Je suis une fonction classique !!');
 };
 
-fonctionAnonyme();
-fonctionClassique();
-
-(
-	function(){
-	console.log('Je ne suis pas une fonction classique, mon nom est personne !');
-}
-)();
+var button = document.getElementById('pro_button');
+button.onclick = function(){
+	alert('Bravo !');
+};

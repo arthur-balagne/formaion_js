@@ -1,1 +1,1 @@
-console.log('javascript from app ready to serve !!');
+console.log('1');
